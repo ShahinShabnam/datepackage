@@ -1,8 +1,8 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common'), require('devextreme-angular/ui/button')) :
-	typeof define === 'function' && define.amd ? define(['exports', '@angular/core', '@angular/common', 'devextreme-angular/ui/button'], factory) :
-	(factory((global.datepackage = {}),global.core,global.common,global.button));
-}(this, (function (exports,core,common,button) { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common'), require('devextreme-angular/ui/button'), require('@angular/forms')) :
+	typeof define === 'function' && define.amd ? define(['exports', '@angular/core', '@angular/common', 'devextreme-angular/ui/button', '@angular/forms'], factory) :
+	(factory((global.datepackage = {}),global.core,global.common,global.button,global.forms));
+}(this, (function (exports,core,common,button,forms) { 'use strict';
 
 var SampleComponent = (function () {
     function SampleComponent() {
@@ -106,6 +106,7 @@ SampleModule.decorators = [
     { type: core.NgModule, args: [{
                 imports: [
                     common.CommonModule,
+                    forms.FormsModule,
                     button.DxButtonModule
                 ],
                 declarations: [

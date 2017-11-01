@@ -1,6 +1,7 @@
 import { Component, Directive, ElementRef, Injectable, NgModule, Pipe } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DxButtonModule } from 'devextreme-angular/ui/button';
+import { FormsModule } from '@angular/forms';
 
 var SampleComponent = (function () {
     function SampleComponent() {
@@ -104,6 +105,7 @@ SampleModule.decorators = [
     { type: NgModule, args: [{
                 imports: [
                     CommonModule,
+                    FormsModule,
                     DxButtonModule
                 ],
                 declarations: [
